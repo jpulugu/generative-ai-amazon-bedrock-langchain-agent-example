@@ -1,4 +1,4 @@
-# If not already forked, fork the remote repository (https://github.com/aws-samples/generative-ai-amazon-bedrock-langchain-agent-example) and change working directory to shell folder
+# If not already forked, fork the remote repository (https://github.com/jpulugu/generative-ai-amazon-bedrock-langchain-agent-example/tree/main) and change working directory to shell folder
 # cd generative-ai-amazon-bedrock-langchain-agent-example/shell/
 # chmod u+x create-stack.sh
 # source ./create-stack.sh

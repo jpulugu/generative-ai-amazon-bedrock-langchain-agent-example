@@ -58,7 +58,7 @@ Metadata:
       KendraWebCrawlerUrl:
         default: your-root-domain
       AmplifyRepository:
-        default: https://github.com/aws-samples/generative-ai-amazon-bedrock-langchain-agent-example
+        default: https://github.com/jpulugu/generative-ai-amazon-bedrock-langchain-agent-example/tree/main
 
 Parameters:
   S3ArtifactBucket:
@@ -97,7 +97,7 @@ Parameters:
   AmplifyRepository:
     Description: Source repository for AWS Amplify frontend. 
     Type: String
-    Default: https://github.com/aws-samples/generative-ai-amazon-bedrock-langchain-agent-example
+    Default: https://github.com/jpulugu/generative-ai-amazon-bedrock-langchain-agent-example/tree/main
 
 Resources:
   UserPendingAccountsTable:

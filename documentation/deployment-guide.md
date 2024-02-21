@@ -13,10 +13,10 @@ To deploy this solution, your IAM user/role or service role must have permission
 
 You must also have [AWS CLI](https://aws.amazon.com/cli/) installed. For instructions on installing AWS CLI, please see [Installing, updating, and uninstalling the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html).
 
-### Fork and Clone [_generative-ai-amazon-bedrock-langchain-agent-example_](https://github.com/aws-samples/generative-ai-amazon-bedrock-langchain-agent-example) Repository
+### Fork and Clone [_generative-ai-amazon-bedrock-langchain-agent-example_](https://github.com/jpulugu/generative-ai-amazon-bedrock-langchain-agent-example/tree/main) Repository
 Before you deploy the solution, you need to create your own forked version of the solution repository with a token-secured webhook to automate continuous deployment of your Amplify website. The Amplify configuration points to a GitHub source repository from which our website's front-end is built.
 
-Complete the following steps to fork and clone the [generative-ai-amazon-bedrock-langchain-agent-example](https://github.com/aws-samples/generative-ai-amazon-bedrock-langchain-agent-example.git) repository:
+Complete the following steps to fork and clone the [generative-ai-amazon-bedrock-langchain-agent-example](https://github.com/jpulugu/generative-ai-amazon-bedrock-langchain-agent-example/tree/main.git) repository:
 
 1. To control the source code that builds your Amplify website, follow the instructions in [Fork a repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo?tool=webui&platform=mac) to fork the _generative-ai-amazon-bedrock-langchain-agent-example_ repository. This creates a copy of the repository that is disconnected from the original code base, so you can make the appropriate modifications.
 2. Take note of your forked repository URL to use to clone the repository in the next step and to configure the _GITHUB_PAT_ environment variable used in the [Solution deployment automation script](deployment-automation-script).
@@ -42,7 +42,7 @@ brew gem install cfn-nag
 
 To initiate the security scan, run the following command:
 ```sh
-# git clone https://github.com/aws-samples/generative-ai-amazon-bedrock-langchain-agent-example
+# git clone https://github.com/jpulugu/generative-ai-amazon-bedrock-langchain-agent-example/tree/main
 # cd generative-ai-amazon-bedrock-langchain-agent-example
 cfn_nag_scan --input-path cfn/GenAI-FSI-Agent.yml
 ```
@@ -73,7 +73,7 @@ AWS CloudFormation prepopulates stack parameters with the default values provide
 1. Before you run the shell script, navigate to your forked version of the _generative-ai-amazon-bedrock-langchain-agent-example_ repository as your working directory and modify the shell script permissions to executable:
 
 ```sh
-# If not already forked, fork the remote repository (https://github.com/aws-samples/generative-ai-amazon-bedrock-langchain-agent-example) and change working directory to shell folder:
+# If not already forked, fork the remote repository (https://github.com/jpulugu/generative-ai-amazon-bedrock-langchain-agent-example/tree/main) and change working directory to shell folder:
 cd generative-ai-amazon-bedrock-langchain-agent-example/shell/
 chmod u+x create-stack.sh
 ```
@@ -97,7 +97,7 @@ source ./create-stack.sh
 The preceding ```source ./create-stack.sh``` shell command runs the following AWS CLI commands to deploy the solution stack:
 
 ```sh
-# If not already forked, fork the remote repository (https://github.com/aws-samples/generative-ai-amazon-bedrock-langchain-agent-example) and change working directory to shell folder
+# If not already forked, fork the remote repository (https://github.com/jpulugu/generative-ai-amazon-bedrock-langchain-agent-example/tree/main) and change working directory to shell folder
 # cd generative-ai-amazon-bedrock-langchain-agent-example/shell/
 # chmod u+x create-stack.sh
 # source ./create-stack.sh
